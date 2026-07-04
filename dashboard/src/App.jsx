@@ -8,7 +8,7 @@ export default function App() {
     <div className="min-h-screen">
       <div className="flex gap-[39px]">
         <SideBar />
-        <div className="flex-1">
+        <div className="flex-1 pt-[32px] pr-[40px]">
           <Header />
 
           <div>
