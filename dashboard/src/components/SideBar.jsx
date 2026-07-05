@@ -34,7 +34,7 @@ const menu = [
 
 export default function SideBar() {
   return (
-    <div className="bg-[#f3f3f3] pl-[40px] pr-[57px] pt-[32px] min-h-screen">
+    <div className="bg-[#f3f3f3] pl-[40px] pr-[57px] pt-[32px] w-[263px] min-h-screen">
       {/* logo */}
       <div>
         <img src="./assets/Logo.svg" alt="CryptX Logo" />
