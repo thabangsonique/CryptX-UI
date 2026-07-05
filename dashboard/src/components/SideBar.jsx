@@ -34,7 +34,7 @@ const menu = [
 
 export default function SideBar() {
   return (
-    <div className="bg-[#f3f3f3] pl-[40px] pr-[57px] pt-[32px] w-[263px] min-h-screen">
+    <div className="bg-[#f3f3f3] pl-[40px] pr-[57px] pt-[32px] md:min-w-[263px]  min-h-screen">
       {/* logo */}
       <div>
         <img src="./assets/Logo.svg" alt="CryptX Logo" />
@@ -59,7 +59,7 @@ export default function SideBar() {
                   </div>
 
                   {/* dot */}
-                  <div className="rounded-full bg-primary h-[10px] w-[10px]" />
+                  <div className="hidden lg:block rounded-full bg-primary h-[10px] w-[10px]" />
                 </div>
               ) : (
                 <div className="flex items-center gap-[20px]">

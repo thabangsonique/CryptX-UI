@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Header() {
   return (
-    <div className="flex justify-between pt-[33px]  pb-[32px] pl-[39px] border-b border-border  backdrop-blur-2xl">
+    <div className="flex justify-between pt-[33px]  pb-[32px] pl-[39px] pr-[40px] border-b border-border  backdrop-blur-2xl bg-white">
       {/* left side */}
       <div>
         {/* searchbar container */}

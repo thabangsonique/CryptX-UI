@@ -7,7 +7,7 @@ import Transections from "./Transections";
 
 export default function Dashboard() {
   return (
-    <div className="overflow-y-auto min-h-screen pl-[39px] pt-[149px] pr-[43px]">
+    <div className="overflow-y-auto min-h-screen mb-[46px] pl-[39px] pt-[44px] pr-[43px]">
       <div className="grid grid-cols-1 xl:grid-cols-2 items-start ">
         {/* left grid stats */}
         <div className="grid md:grid-cols-2 gap-[30px]">
@@ -56,9 +56,13 @@ export default function Dashboard() {
       </div>
 
       {/* live market */}
-      <div className="mt-[32px]">
-        <LiveMarket />
-        <Transections />
+      <div className="mt-[32px] flex  gap-[60px] flex-col xl:flex-row">
+        <div>
+          <LiveMarket />
+        </div>
+        <div>
+          <Transections />
+        </div>
       </div>
     </div>
   );

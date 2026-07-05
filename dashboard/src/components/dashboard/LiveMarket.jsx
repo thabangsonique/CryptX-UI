@@ -37,20 +37,20 @@ const markets = [
 
 export default function LiveMarket() {
   return (
-    <div className=" bg-white">
+    <div className=" bg-white xl:w-[692px] xl:h-[358px]">
       <span className="text-black text-[21px] font-semibold">Live Market</span>
 
       {/* live market rows */}
-      <div className="space-y-[32px] mt-[26px]">
+      <div className="space-y-[32px] mt-[26px] ">
         {markets.map((marketItem, idx) => (
-          <div key={idx} className="flex items-center">
+          <div key={idx} className="flex items-center justify-between">
             {/* icon */}
             <div className="rounded-full border-border border-[2px] p-[13px] flex ">
               <img src={marketItem.icon} />
             </div>
 
             {/* title text */}
-            <div className="ml-[15px]">
+            <div className="ml-[15px] space-x-[5px]">
               <span className="font-semibold text-base">
                 {marketItem.title}
               </span>

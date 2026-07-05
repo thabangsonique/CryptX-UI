@@ -7,9 +7,12 @@ export default function App() {
   return (
     <div className="min-h-screen">
       <div className="flex ">
-        <SideBar />
+        <div className="sticky top-0 h-screen">
+          <SideBar />
+        </div>
+
         <div className="flex-1">
-          <div className="fixed left-[267px] right-0">
+          <div className="z-10 sticky top-0">
             <Header />
           </div>
 
