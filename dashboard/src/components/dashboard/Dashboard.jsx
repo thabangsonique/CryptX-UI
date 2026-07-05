@@ -2,11 +2,13 @@ import React from "react";
 
 import StatsCard from "./StatsCard";
 import PriceChart from "./PriceChart";
+import LiveMarket from "./LiveMarket";
+import Transections from "./Transections";
 
 export default function Dashboard() {
   return (
-    <>
-      <div className="grid grid-cols-1 xl:grid-cols-2 items-start overflow-y-auto min-h-screen pl-[39px] pt-[149px] pr-[43px]">
+    <div className="overflow-y-auto min-h-screen pl-[39px] pt-[149px] pr-[43px]">
+      <div className="grid grid-cols-1 xl:grid-cols-2 items-start ">
         {/* left grid stats */}
         <div className="grid md:grid-cols-2 gap-[30px]">
           <StatsCard
@@ -53,7 +55,11 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* live markets + transections */}
-    </>
+      {/* live market */}
+      <div className="mt-[32px]">
+        <LiveMarket />
+        <Transections />
+      </div>
+    </div>
   );
 }
