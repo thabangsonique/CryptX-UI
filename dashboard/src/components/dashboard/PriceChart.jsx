@@ -9,22 +9,22 @@ const months = ["Jan", "Mar", "May", "Jul", "Sep", "Nov"];
 export default function PriceChart() {
   return (
     <div
-      className="w-full h-[442px] rounded-2xl  pt-[30px] pl-[33px] relative"
+      className="w-full h-[200px] md:h-[442px] md:mt-0 mt-[32px] rounded-2xl pt-[30px] pl-[33px] relative"
       style={{ boxShadow: "0 0 30px rgba(0,0,0,0.08)" }}
     >
       <h1 className="text-[21px]">BTC Prices</h1>
 
-      {/* amounts */}
-      <div className="flex">
+      {/* desktop view amounts */}
+      <div className="flex hidden md:block">
         <div className="mt-[32px]">
           {amounts.map((amount, idx) => (
-            <p className="text-muted-primary mb-[46px] text-xs">{amount}</p>
+            <p className="text-muted-foreground mb-[46px] text-xs">{amount}</p>
           ))}
         </div>
 
         {/* GRAPH VISUALS */}
 
-        <div className="relative overflow-hidden w-[428px] h-[106px] mt-[80px] ml-[16px]">
+        <div className="relative overflow-hidden w-[428px] h-[106px] -mt-[260px] ml-[16px]">
           {/* svg line */}
           <svg
             className="absolute inset-0 w-full h-full"
@@ -72,9 +72,25 @@ export default function PriceChart() {
           </div>
         </div>
         {/* bar highlight */}
-        <div className="absolute left-[238px] top-[189px] h-[169px] w-[36px] bg-gradient-to-t from-primary/30 to-transparent" />
+        <div className="absolute left-[215px] top-[180px] h-[169px] w-[36px] bg-gradient-to-t from-primary/30 to-transparent" />
         {/* bottom line */}
-        <div className="bg-black h-2 " />
+        <div className="mt-[100px]">
+          {" "}
+          <div className="bg-border h-0.25 max-w-[390px] ml-[50px]" />
+          {/* Months */}
+          <div className="flex mt-[35px] ml-[70px] gap-[50px]">
+            {months.map((month, item) => (
+              <div key={item}>
+                <span className="text-muted-foreground text-xs">{month}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* MOBILE VIEW DISPLAY */}
+      <div className="md:hidden mt-[20px] rounded-2xl bg-purple-700/10 inline-block py-3 px-4 border border-1 border-purple-700 shadow-lg">
+        <span>CLICK TO VIEW CHART</span>
       </div>
     </div>
   );

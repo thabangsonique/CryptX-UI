@@ -78,7 +78,7 @@ export default function LiveMarket() {
             </div>
 
             {/* graph */}
-            <div>
+            <div className="hidden md:block">
               <img src={marketItem.image} alt="Market Graph" />
             </div>
           </div>

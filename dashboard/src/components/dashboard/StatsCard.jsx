@@ -11,29 +11,33 @@ export default function StatsCard({
 }) {
   return (
     <div
-      className="lg:w-full rounded-2xl pl-[30px] pt-[32px] pb-[30px]"
+      className="w-full rounded-2xl p-[16px] md:pl-[30px] md:pt-[32px] md:pb-[30px] md:pr-[24px]"
       style={{ boxShadow: "0 0 30px rgba(0,0,0, 0.08)" }}
     >
       {/* IMAGE + RATE */}
-      <div className="flex">
+      <div className="flex items-center justify-between gap-[12px]">
         {/* image icon*/}
         <div
-          className={` ${iconBg} w-[52px] h-[52px] rounded-xl flex items-center justify-center`}
+          className={` ${iconBg} w-[42px] h-[42px] md:w-[52px] md:h-[52px] rounded-xl flex items-center justify-center`}
         >
           {" "}
           {image}
         </div>
 
         {/* rate */}
-        <div className="flex items-center gap-[10px] ml-[61px]">
+        <div className="flex items-center gap-[8px] md:gap-[10px]">
           {rateImage}
-          <p className={`font-medium ${rateColor}`}>{rate}</p>
+          <p className={`text-sm md:text-base font-medium ${rateColor}`}>
+            {rate}
+          </p>
         </div>
       </div>
 
       {/* PRICE TEXT LABEL */}
-      <div className="mt-[24px] ">
-        <span className="text-[28px] font-semibold">{value}</span>
+      <div className="mt-[18px] md:mt-[24px]">
+        <span className="text-[22px] md:text-[28px] font-semibold">
+          {value}
+        </span>
         <p className="text-sm font-normal text-muted-foreground mt-[5px]">
           {label}
         </p>

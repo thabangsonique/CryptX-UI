@@ -16,7 +16,7 @@ export default function App() {
             <Header />
           </div>
 
-          <div className=" min-h-screen">
+          <div className=" min-h-screen ">
             <Dashboard />
           </div>
         </div>

@@ -7,10 +7,10 @@ import Transections from "./Transections";
 
 export default function Dashboard() {
   return (
-    <div className="overflow-y-auto min-h-screen mb-[46px] pl-[39px] pt-[44px] pr-[43px]">
+    <div className="overflow-y-auto  min-h-screen mx-[30px] mb-[46px] px-[16px] pt-[24px] md:pl-[39px] md:pt-[44px] md:pr-[43px]">
       <div className="grid grid-cols-1 xl:grid-cols-2 items-start ">
         {/* left grid stats */}
-        <div className="grid md:grid-cols-2 gap-[30px]">
+        <div className="grid md:grid-cols-2 gap-[16px] md:gap-[30px]">
           <StatsCard
             image={<img src="/assets/bitcoin-(btc).svg" alt="Bitcoin" />}
             rateImage={<img src="./assets/arrow-up.svg" />}
