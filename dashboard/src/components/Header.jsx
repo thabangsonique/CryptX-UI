@@ -6,7 +6,7 @@ export default function Header() {
     <div className="flex justify-between overflow-x-hidden pt-[33px]  pb-[32px] pl-[39px] pr-[40px] border-b border-border  backdrop-blur-2xl bg-white">
       {/* left side */}
       <div className="flex items-center">
-        {/* menu icon */}
+        {/* menu icon mobile display*/}
         <div className=" md:hidden mr-8">
           <Menu />
         </div>

@@ -42,6 +42,7 @@ export default function SideBar() {
 
       {/* menu selection */}
       <div className="overflow-y-auto mt-[63px]">
+        {/* conditional render */}
         <div className="space-y-[32px]">
           {" "}
           {menu.map((menuItem, idx) => (
